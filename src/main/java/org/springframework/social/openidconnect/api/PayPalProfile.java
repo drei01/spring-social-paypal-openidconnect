@@ -20,6 +20,12 @@ public class PayPalProfile implements Serializable {
      * Default serializable version id.
      */
     private static final long serialVersionUID = 1L;
+    
+    /**
+     * Gender
+     */
+    @JsonProperty("gender")
+    private String gender;
 
     /**
      * Last name
@@ -642,5 +648,13 @@ public class PayPalProfile implements Serializable {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
 
 }
